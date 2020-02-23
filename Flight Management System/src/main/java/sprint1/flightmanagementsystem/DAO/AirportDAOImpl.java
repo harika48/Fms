@@ -18,7 +18,7 @@ public class AirportDAOImpl implements AirpotDAO
 		airportEntry.put("nscb",new AirportDTO("netajiSubash","kolkata"));
     }
 		
-		public  AirportDTO  getAirportDetails(String airportCode) 
+		public  AirportDTO  viewList(String airportCode) 
 		{
 		
 			AirportDTO a = new AirportDTO();

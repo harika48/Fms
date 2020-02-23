@@ -8,7 +8,7 @@ public class Test extends TestCase {
 	 static public Map<String,AirportDTO> airportEntry; 
 	 AirportDAOImpl t=new  AirportDAOImpl();
 	 public void test() {
-		 assertEquals(null, t.getAirportDetails("rga"));
+		 assertEquals(null, t.viewList("rga"));
 	 }
 	 public void test1() {
 		 assertEquals(null,t.viewList());

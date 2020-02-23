@@ -6,7 +6,7 @@ import sprint1.flightmanagementsystem.DTO.AirportDTO;
 
 public interface AirpotDAO 
 {	 
-	 public  AirportDTO  getAirportDetails(String airportCode);
+	 public  AirportDTO  viewList(String airportCode);
 	 
 	 public AirportDTO viewList();
 }

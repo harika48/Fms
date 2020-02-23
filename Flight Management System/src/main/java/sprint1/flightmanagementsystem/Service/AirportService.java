@@ -9,9 +9,9 @@ public class AirportService
 {
 	AirportDAOImpl dao = new AirportDAOImpl();
 	
-	 public AirportDTO getAirportDetails(String airportCode) 
+	 public AirportDTO viewList(String airportCode) 
 	  { 
-		  AirportDTO a = dao.getAirportDetails(airportCode);
+		  AirportDTO a = dao.viewList(airportCode);
 		  return a;
 	  }
 
