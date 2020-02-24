@@ -9,4 +9,5 @@ public interface AirpotDAO
 	 public  AirportDTO  viewList(String airportCode);
 	 
 	 public AirportDTO viewList();
+	 public boolean isValid(String airportCode);
 }

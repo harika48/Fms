@@ -17,7 +17,12 @@ public class AirportDAOImpl implements AirpotDAO
 		airportEntry.put("csa",new AirportDTO("chhatrapathishivaji","Mumbai"));
 		airportEntry.put("nscb",new AirportDTO("netajiSubash","kolkata"));
     }
-		
+    public boolean isValid(String airportCode){
+		if(!airportEntry.containsKey(airportCode)){
+			return false;
+		}
+		return true;
+	} 
 		public  AirportDTO  viewList(String airportCode) 
 		{
 		
