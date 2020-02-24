@@ -34,7 +34,7 @@ public class MainUI
 			s.nextLine();
 		}
 		catch(Exception e) {
-			System.err.println("Please enter correct option");
+			System.err.println("Please enter correct Choice");
 			s.nextLine();
 		}
 			switch(ch)
@@ -48,16 +48,13 @@ public class MainUI
 			  		  System.out.println("Airport details of code "+airportCode+" are \nAirport Name : "+a.getAirportName()+"\nAirport Location : "+a.getAirportLocation());
 						}
 						else{
-							throw new AirportException("Invalid airport code");
+							throw new AirportException("Entered airport code is not available please try with another code");
 						}
 			    }
 			    catch(Exception e){
 			    	System.out.println(e.getMessage());
 			    }
 				break;
-			
-		
-		
 		    case 2:
 				   service.viewList();
 			       break;

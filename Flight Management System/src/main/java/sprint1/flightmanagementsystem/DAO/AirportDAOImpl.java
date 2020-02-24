@@ -13,9 +13,11 @@ public class AirportDAOImpl implements AirpotDAO
     {
     	airportEntry = new HashMap<String, AirportDTO>();
     	
-	    airportEntry.put("rga",new AirportDTO("rajiv gandhi","hyd"));
-		airportEntry.put("csa",new AirportDTO("chhatrapathishivaji","Mumbai"));
-		airportEntry.put("nscb",new AirportDTO("netajiSubash","kolkata"));
+	    airportEntry.put("rga",new AirportDTO("Rajiv gandhi","hyd"));
+		airportEntry.put("csa",new AirportDTO("Chhatrapathishivaji","Mumbai"));
+		airportEntry.put("nscb",new AirportDTO("NetajiSubash","kolkata"));
+		airportEntry.put("gaa", new AirportDTO("Gaya Airport","Bihar"));
+		airportEntry.put("mga", new AirportDTO("Mangalore Airport","Mangalore"));
     }
     public boolean isValid(String airportCode){
 		if(!airportEntry.containsKey(airportCode)){
